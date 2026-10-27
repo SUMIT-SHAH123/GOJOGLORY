@@ -2851,7 +2851,7 @@ async def create_four_accounts(region: str, clan_id: str, count: int = 2, passwo
                         await asyncio.sleep(2); continue
 
                     rand_num = random.randint(100000, 999999)
-                    nickname_final = f"DISHA-{rand_num}"
+                    nickname_final = f"SUM-X-{rand_num}"
                     mr = await major_register(release_v, access_token, open_id,
                                               nickname_final, game_version, login_url, lang)
                     if not mr:
