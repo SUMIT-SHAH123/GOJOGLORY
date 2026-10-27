@@ -6,3 +6,4 @@ protobuf>=5.26.0
 protobuf-decoder>=0.0.2
 requests>=2.31.0
 gunicorn==22.0.0
+Flask>=3.0.0
