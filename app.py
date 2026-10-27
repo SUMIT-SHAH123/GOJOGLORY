@@ -1,9 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Entry point for Cloud and Hosting Providers (Railway, Render, Koyeb, GitHub Actions, etc.)
-"""
+from flask import Flask
 import asyncio
 import main
 
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "GOJOGLORY is running!"
+
 if __name__ == "__main__":
-    asyncio.run(main.main())
+    app.run()
